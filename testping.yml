@@ -1,8 +1,5 @@
 ---
-- hosts: all
-  remote_user: itdept
-  become: yes
-  become_user: root
-  gather_facts: false
+- hosts: 10.1.75.2
+  gather_facts: False
   tasks:
     - ping:
