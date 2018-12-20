@@ -1,11 +1,8 @@
-
 ---
-
 - hosts: all
-  gather_facts: false
-  tasks:
-    - ping:
-- name: log in as itdept and do something as root
   remote_user: itdept
   become: yes
   become_user: root
+  gather_facts: false
+  tasks:
+    - ping:
